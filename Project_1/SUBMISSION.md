@@ -1,7 +1,7 @@
 # Submission: Project 1
 
 ## Authors
-**Team name:** <your team name>
+**Team name:** Xplore
 
 **Project:** Project 1: Teach a machine to say "I don't know" (structured extraction from documents)
 
@@ -48,7 +48,7 @@ its own confidence; code then checks the answer against the contract.
 | 4 | Is it a value (date, name, amount) or a clause to be read? | A named value occurs in the contract. |
 
 The final confidence combines the four step confidences with **equal weight** (their geometric mean). The weights are a
-design choice: depending on the application they can be varied, for example for legal documents, where a quote that is not
+design choice: depending on the application they can be varied for each step, for example for legal documents, where a quote that is not
 in the contract should count for more than the other steps.
 
 **Assumptions:** the contract text in `CUADv1.json` is the document (the gold answers are spans of it); gold is never read

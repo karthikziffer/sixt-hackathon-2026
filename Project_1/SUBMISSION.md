@@ -40,6 +40,9 @@ which a better model does not remove.
 `agent_confidence.py`, four LLM calls per contract (slide `04`). Each step asks the model one narrow question and returns
 its own confidence; code then checks the answer against the contract.
 
+
+Dividing the document into steps to granularly verify it similar to rubrik technique.
+
 | Step | The model answers | Code check |
 | --- | --- | --- |
 | 1 | Is the answer present? (all 41 clauses) | |

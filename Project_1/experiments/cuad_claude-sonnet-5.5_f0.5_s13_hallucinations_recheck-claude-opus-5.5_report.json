@@ -1,0 +1,308 @@
+{
+  "first_model": "claude-sonnet-5.5",
+  "strong_model": "claude-opus-5.5",
+  "rechecked": 286,
+  "of": 286,
+  "groups": {
+    "same": 129,
+    "different": 116,
+    "empty": 41
+  },
+  "by_first_confidence": [
+    {
+      "band": "0.80 and up",
+      "rows": 13,
+      "empty": 0,
+      "same": 9,
+      "different": 4
+    },
+    {
+      "band": "0.60 - 0.79",
+      "rows": 67,
+      "empty": 7,
+      "same": 39,
+      "different": 21
+    },
+    {
+      "band": "0.40 - 0.59",
+      "rows": 133,
+      "empty": 14,
+      "same": 58,
+      "different": 61
+    },
+    {
+      "band": "under 0.40",
+      "rows": 73,
+      "empty": 20,
+      "same": 23,
+      "different": 30
+    }
+  ],
+  "by_clause": [
+    {
+      "clause": "Post-Termination Services",
+      "rows": 52,
+      "empty": 1,
+      "same": 16,
+      "different": 35
+    },
+    {
+      "clause": "Third Party Beneficiary",
+      "rows": 33,
+      "empty": 21,
+      "same": 9,
+      "different": 3
+    },
+    {
+      "clause": "Exclusivity",
+      "rows": 19,
+      "empty": 0,
+      "same": 7,
+      "different": 12
+    },
+    {
+      "clause": "Price Restrictions",
+      "rows": 19,
+      "empty": 0,
+      "same": 8,
+      "different": 11
+    },
+    {
+      "clause": "Non-Transferable License",
+      "rows": 18,
+      "empty": 0,
+      "same": 10,
+      "different": 8
+    },
+    {
+      "clause": "Renewal Term",
+      "rows": 15,
+      "empty": 10,
+      "same": 5,
+      "different": 0
+    },
+    {
+      "clause": "Termination For Convenience",
+      "rows": 12,
+      "empty": 0,
+      "same": 9,
+      "different": 3
+    },
+    {
+      "clause": "Effective Date",
+      "rows": 10,
+      "empty": 0,
+      "same": 7,
+      "different": 3
+    },
+    {
+      "clause": "Non-Compete",
+      "rows": 8,
+      "empty": 0,
+      "same": 4,
+      "different": 4
+    },
+    {
+      "clause": "Ip Ownership Assignment",
+      "rows": 8,
+      "empty": 0,
+      "same": 3,
+      "different": 5
+    },
+    {
+      "clause": "Change Of Control",
+      "rows": 8,
+      "empty": 1,
+      "same": 3,
+      "different": 4
+    },
+    {
+      "clause": "Competitive Restriction Exception",
+      "rows": 8,
+      "empty": 0,
+      "same": 6,
+      "different": 2
+    },
+    {
+      "clause": "Volume Restriction",
+      "rows": 7,
+      "empty": 1,
+      "same": 4,
+      "different": 2
+    },
+    {
+      "clause": "License Grant",
+      "rows": 6,
+      "empty": 0,
+      "same": 4,
+      "different": 2
+    },
+    {
+      "clause": "Notice Period To Terminate Renewal",
+      "rows": 6,
+      "empty": 3,
+      "same": 1,
+      "different": 2
+    },
+    {
+      "clause": "Anti-Assignment",
+      "rows": 5,
+      "empty": 0,
+      "same": 2,
+      "different": 3
+    },
+    {
+      "clause": "Non-Disparagement",
+      "rows": 5,
+      "empty": 0,
+      "same": 4,
+      "different": 1
+    },
+    {
+      "clause": "Warranty Duration",
+      "rows": 4,
+      "empty": 0,
+      "same": 3,
+      "different": 1
+    },
+    {
+      "clause": "Affiliate License-Licensor",
+      "rows": 4,
+      "empty": 0,
+      "same": 2,
+      "different": 2
+    },
+    {
+      "clause": "Governing Law",
+      "rows": 3,
+      "empty": 1,
+      "same": 1,
+      "different": 1
+    },
+    {
+      "clause": "Agreement Date",
+      "rows": 3,
+      "empty": 0,
+      "same": 3,
+      "different": 0
+    },
+    {
+      "clause": "Covenant Not To Sue",
+      "rows": 3,
+      "empty": 0,
+      "same": 3,
+      "different": 0
+    },
+    {
+      "clause": "Irrevocable Or Perpetual License",
+      "rows": 3,
+      "empty": 0,
+      "same": 3,
+      "different": 0
+    },
+    {
+      "clause": "Most Favored Nation",
+      "rows": 3,
+      "empty": 1,
+      "same": 1,
+      "different": 1
+    },
+    {
+      "clause": "No-Solicit Of Customers",
+      "rows": 3,
+      "empty": 0,
+      "same": 2,
+      "different": 1
+    },
+    {
+      "clause": "Expiration Date",
+      "rows": 3,
+      "empty": 0,
+      "same": 1,
+      "different": 2
+    },
+    {
+      "clause": "Affiliate License-Licensee",
+      "rows": 3,
+      "empty": 0,
+      "same": 0,
+      "different": 3
+    },
+    {
+      "clause": "Uncapped Liability",
+      "rows": 3,
+      "empty": 1,
+      "same": 1,
+      "different": 1
+    },
+    {
+      "clause": "Audit Rights",
+      "rows": 2,
+      "empty": 0,
+      "same": 1,
+      "different": 1
+    },
+    {
+      "clause": "Cap On Liability",
+      "rows": 2,
+      "empty": 0,
+      "same": 2,
+      "different": 0
+    },
+    {
+      "clause": "Revenue/Profit Sharing",
+      "rows": 2,
+      "empty": 0,
+      "same": 0,
+      "different": 2
+    },
+    {
+      "clause": "No-Solicit Of Employees",
+      "rows": 1,
+      "empty": 0,
+      "same": 1,
+      "different": 0
+    },
+    {
+      "clause": "Joint Ip Ownership",
+      "rows": 1,
+      "empty": 0,
+      "same": 1,
+      "different": 0
+    },
+    {
+      "clause": "Minimum Commitment",
+      "rows": 1,
+      "empty": 0,
+      "same": 1,
+      "different": 0
+    },
+    {
+      "clause": "Liquidated Damages",
+      "rows": 1,
+      "empty": 1,
+      "same": 0,
+      "different": 0
+    },
+    {
+      "clause": "Rofr/Rofo/Rofn",
+      "rows": 1,
+      "empty": 0,
+      "same": 1,
+      "different": 0
+    },
+    {
+      "clause": "Insurance",
+      "rows": 1,
+      "empty": 0,
+      "same": 0,
+      "different": 1
+    }
+  ],
+  "cost": {
+    "input_tokens": 2527521,
+    "output_tokens": 60955,
+    "total_usd": 12.462102400000001,
+    "calls": 144
+  }
+}

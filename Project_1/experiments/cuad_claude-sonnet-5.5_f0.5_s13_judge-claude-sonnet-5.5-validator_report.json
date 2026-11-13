@@ -1,0 +1,255 @@
+{
+  "extractor": "claude-sonnet-5.5",
+  "judge": "claude-sonnet-5.5 (validator prompt)",
+  "contracts": 50,
+  "sampled": 190,
+  "answers_judged": 602,
+  "status_table": {
+    "FOUND": {
+      "correct": 272,
+      "wrong": 253,
+      "hallucinated": 70
+    },
+    "PARTIALLY_FOUND": {
+      "correct": 3,
+      "wrong": 3,
+      "hallucinated": 1
+    }
+  },
+  "verdict": {
+    "says_right_is_right": 272,
+    "says_right_is_wrong": 323,
+    "says_wrong_is_right": 3,
+    "says_wrong_is_wrong": 4,
+    "no_verdict": 0,
+    "precision_when_says_right": 0.45714285714285713,
+    "wrong_caught": 0.012232415902140673,
+    "right_kept": 0.9890909090909091
+  },
+  "by_threshold": {
+    "extractor": [
+      {
+        "threshold": 0.0,
+        "accepted": 602,
+        "precision": 0.4568106312292359,
+        "recall": 0.4358161648177496,
+        "net_saving_pct": -15.657560975609757
+      },
+      {
+        "threshold": 0.5,
+        "accepted": 491,
+        "precision": 0.5234215885947047,
+        "recall": 0.40729001584786056,
+        "net_saving_pct": -11.175121951219513
+      },
+      {
+        "threshold": 0.6,
+        "accepted": 389,
+        "precision": 0.5629820051413882,
+        "recall": 0.347068145800317,
+        "net_saving_pct": -8.102926829268293
+      },
+      {
+        "threshold": 0.7,
+        "accepted": 272,
+        "precision": 0.6507352941176471,
+        "recall": 0.2805071315372425,
+        "net_saving_pct": -4.501463414634146
+      },
+      {
+        "threshold": 0.8,
+        "accepted": 199,
+        "precision": 0.6984924623115578,
+        "recall": 0.2202852614896989,
+        "net_saving_pct": -2.8297560975609755
+      },
+      {
+        "threshold": 0.85,
+        "accepted": 102,
+        "precision": 0.8921568627450981,
+        "recall": 0.14421553090332806,
+        "net_saving_pct": -0.4868292682926829
+      },
+      {
+        "threshold": 0.9,
+        "accepted": 40,
+        "precision": 0.95,
+        "recall": 0.060221870047543584,
+        "net_saving_pct": -0.07804878048780488
+      },
+      {
+        "threshold": 0.95,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      },
+      {
+        "threshold": 0.99,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      }
+    ],
+    "judge": [
+      {
+        "threshold": 0.0,
+        "accepted": 602,
+        "precision": 0.4568106312292359,
+        "recall": 0.4358161648177496,
+        "net_saving_pct": -15.657560975609757
+      },
+      {
+        "threshold": 0.5,
+        "accepted": 595,
+        "precision": 0.45714285714285713,
+        "recall": 0.43106180665610144,
+        "net_saving_pct": -15.465853658536586
+      },
+      {
+        "threshold": 0.6,
+        "accepted": 595,
+        "precision": 0.45714285714285713,
+        "recall": 0.43106180665610144,
+        "net_saving_pct": -15.465853658536586
+      },
+      {
+        "threshold": 0.7,
+        "accepted": 591,
+        "precision": 0.4602368866328257,
+        "recall": 0.43106180665610144,
+        "net_saving_pct": -15.272682926829269
+      },
+      {
+        "threshold": 0.8,
+        "accepted": 580,
+        "precision": 0.4672413793103448,
+        "recall": 0.4294770206022187,
+        "net_saving_pct": -14.790243902439025
+      },
+      {
+        "threshold": 0.85,
+        "accepted": 568,
+        "precision": 0.46830985915492956,
+        "recall": 0.4215530903328051,
+        "net_saving_pct": -14.454634146341464
+      },
+      {
+        "threshold": 0.9,
+        "accepted": 540,
+        "precision": 0.47962962962962963,
+        "recall": 0.410459587955626,
+        "net_saving_pct": -13.44390243902439
+      },
+      {
+        "threshold": 0.95,
+        "accepted": 468,
+        "precision": 0.5106837606837606,
+        "recall": 0.3787638668779715,
+        "net_saving_pct": -10.942439024390245
+      },
+      {
+        "threshold": 0.99,
+        "accepted": 21,
+        "precision": 0.8571428571428571,
+        "recall": 0.028526148969889066,
+        "net_saving_pct": -0.13609756097560977
+      }
+    ],
+    "both (lower of the two)": [
+      {
+        "threshold": 0.0,
+        "accepted": 602,
+        "precision": 0.4568106312292359,
+        "recall": 0.4358161648177496,
+        "net_saving_pct": -15.657560975609757
+      },
+      {
+        "threshold": 0.5,
+        "accepted": 488,
+        "precision": 0.5225409836065574,
+        "recall": 0.4041204437400951,
+        "net_saving_pct": -11.12780487804878
+      },
+      {
+        "threshold": 0.6,
+        "accepted": 388,
+        "precision": 0.5618556701030928,
+        "recall": 0.34548335974643424,
+        "net_saving_pct": -8.103414634146342
+      },
+      {
+        "threshold": 0.7,
+        "accepted": 272,
+        "precision": 0.6507352941176471,
+        "recall": 0.2805071315372425,
+        "net_saving_pct": -4.501463414634146
+      },
+      {
+        "threshold": 0.8,
+        "accepted": 199,
+        "precision": 0.6984924623115578,
+        "recall": 0.2202852614896989,
+        "net_saving_pct": -2.8297560975609755
+      },
+      {
+        "threshold": 0.85,
+        "accepted": 102,
+        "precision": 0.8921568627450981,
+        "recall": 0.14421553090332806,
+        "net_saving_pct": -0.4868292682926829
+      },
+      {
+        "threshold": 0.9,
+        "accepted": 40,
+        "precision": 0.95,
+        "recall": 0.060221870047543584,
+        "net_saving_pct": -0.07804878048780488
+      },
+      {
+        "threshold": 0.95,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      },
+      {
+        "threshold": 0.99,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      }
+    ]
+  },
+  "best_net_saving": {
+    "extractor": {
+      "threshold": null,
+      "net_saving_pct": 0.0,
+      "accepted": 0,
+      "precision": null
+    },
+    "judge": {
+      "threshold": null,
+      "net_saving_pct": 0.0,
+      "accepted": 0,
+      "precision": null
+    },
+    "both (lower of the two)": {
+      "threshold": null,
+      "net_saving_pct": 0.0,
+      "accepted": 0,
+      "precision": null
+    }
+  },
+  "cost": {
+    "input_tokens": 923202,
+    "output_tokens": 148999,
+    "total_usd": 3.6700334000000003,
+    "source": "as reported by the gateway",
+    "per_contract_usd": 0.073400668,
+    "per_answer_usd": 0.006096400996677741,
+    "per_token_usd": 3.4228968262480638e-06
+  }
+}

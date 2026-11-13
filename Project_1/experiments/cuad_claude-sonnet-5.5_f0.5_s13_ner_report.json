@@ -1,0 +1,489 @@
+{
+  "tagger": "claude-sonnet-5.5",
+  "hallucinated_tagged": 286,
+  "hallucinated_total": 286,
+  "correct_tagged": 1032,
+  "by_answer_type": [
+    {
+      "answer_type": "CLAUSE",
+      "hallucinated": 277,
+      "correct": 603
+    },
+    {
+      "answer_type": "DATE",
+      "hallucinated": 9,
+      "correct": 217
+    },
+    {
+      "answer_type": "ORG",
+      "hallucinated": 0,
+      "correct": 40
+    },
+    {
+      "answer_type": "DOC",
+      "hallucinated": 0,
+      "correct": 171
+    },
+    {
+      "answer_type": "PERSON",
+      "hallucinated": 0,
+      "correct": 1
+    }
+  ],
+  "by_entity_category": [
+    {
+      "category": "ROLE",
+      "hallucinated_answers": 187,
+      "correct_answers": 302,
+      "mentions": 264
+    },
+    {
+      "category": "ORG",
+      "hallucinated_answers": 85,
+      "correct_answers": 230,
+      "mentions": 113
+    },
+    {
+      "category": "DOC",
+      "hallucinated_answers": 74,
+      "correct_answers": 308,
+      "mentions": 96
+    },
+    {
+      "category": "DURATION",
+      "hallucinated_answers": 70,
+      "correct_answers": 207,
+      "mentions": 85
+    },
+    {
+      "category": "PRODUCT",
+      "hallucinated_answers": 70,
+      "correct_answers": 125,
+      "mentions": 90
+    },
+    {
+      "category": "DATE",
+      "hallucinated_answers": 20,
+      "correct_answers": 245,
+      "mentions": 24
+    },
+    {
+      "category": "GPE",
+      "hallucinated_answers": 10,
+      "correct_answers": 113,
+      "mentions": 10
+    },
+    {
+      "category": "MONEY",
+      "hallucinated_answers": 7,
+      "correct_answers": 19,
+      "mentions": 9
+    },
+    {
+      "category": "QUANTITY",
+      "hallucinated_answers": 7,
+      "correct_answers": 10,
+      "mentions": 9
+    },
+    {
+      "category": "PERCENT",
+      "hallucinated_answers": 3,
+      "correct_answers": 13,
+      "mentions": 3
+    },
+    {
+      "category": "LAW",
+      "hallucinated_answers": 3,
+      "correct_answers": 134,
+      "mentions": 3
+    },
+    {
+      "category": "PERSON",
+      "hallucinated_answers": 2,
+      "correct_answers": 10,
+      "mentions": 2
+    }
+  ],
+  "top_entities": {
+    "ROLE": [
+      [
+        "Company",
+        14
+      ],
+      [
+        "Party",
+        14
+      ],
+      [
+        "Party A",
+        11
+      ],
+      [
+        "Parties",
+        11
+      ],
+      [
+        "Party B",
+        10
+      ],
+      [
+        "Client",
+        9
+      ]
+    ],
+    "ORG": [
+      [
+        "ICC",
+        4
+      ],
+      [
+        "TrueLink",
+        3
+      ],
+      [
+        "Excite",
+        3
+      ],
+      [
+        "XIMAGE",
+        3
+      ],
+      [
+        "MORPHO",
+        3
+      ],
+      [
+        "Kuwait Government",
+        3
+      ]
+    ],
+    "DOC": [
+      [
+        "Agreement",
+        6
+      ],
+      [
+        "Exhibit A",
+        4
+      ],
+      [
+        "Documentation",
+        4
+      ],
+      [
+        "Purchase Order",
+        3
+      ],
+      [
+        "this Agreement",
+        3
+      ],
+      [
+        "Sections 13 and 14",
+        2
+      ]
+    ],
+    "PRODUCT": [
+      [
+        "Product",
+        8
+      ],
+      [
+        "Hosting Services",
+        5
+      ],
+      [
+        "Products",
+        5
+      ],
+      [
+        "Software",
+        3
+      ],
+      [
+        "PSS",
+        3
+      ],
+      [
+        "AFIS",
+        3
+      ]
+    ],
+    "DURATION": [
+      [
+        "Term",
+        17
+      ],
+      [
+        "twelve (12) months",
+        7
+      ],
+      [
+        "Initial Term",
+        6
+      ],
+      [
+        "the Term",
+        5
+      ],
+      [
+        "one year",
+        4
+      ],
+      [
+        "30 days",
+        3
+      ]
+    ],
+    "DATE": [
+      [
+        "January 11, 2018",
+        1
+      ],
+      [
+        "9/29/2009",
+        1
+      ],
+      [
+        "Launch Date",
+        1
+      ],
+      [
+        "January 1, 2032",
+        1
+      ],
+      [
+        "Termination Date",
+        1
+      ],
+      [
+        "Effective Date",
+        1
+      ]
+    ],
+    "GPE": [
+      [
+        "Kuwait",
+        3
+      ],
+      [
+        "Territory",
+        2
+      ],
+      [
+        "Netherlands",
+        2
+      ],
+      [
+        "FLorida",
+        1
+      ],
+      [
+        "United States",
+        1
+      ],
+      [
+        "Area",
+        1
+      ]
+    ],
+    "MONEY": [
+      [
+        "$55.00",
+        1
+      ],
+      [
+        "$0.01",
+        1
+      ],
+      [
+        "$0.005",
+        1
+      ],
+      [
+        "$15,000.00",
+        1
+      ],
+      [
+        "$20",
+        1
+      ],
+      [
+        "$800,000",
+        1
+      ]
+    ],
+    "QUANTITY": [
+      [
+        "two",
+        1
+      ],
+      [
+        "400,000 accesses",
+        1
+      ],
+      [
+        "10 G",
+        1
+      ],
+      [
+        "1 G",
+        1
+      ],
+      [
+        "10",
+        1
+      ],
+      [
+        "a single hardware chassis or card",
+        1
+      ]
+    ],
+    "PERCENT": [
+      [
+        "0.05%",
+        1
+      ],
+      [
+        "2 5%",
+        1
+      ],
+      [
+        "20%",
+        1
+      ]
+    ],
+    "LAW": [
+      [
+        "the laws of the State of California",
+        1
+      ],
+      [
+        "Applicable Laws",
+        1
+      ],
+      [
+        "Contracts (Rights of Third Parties) Act (Cap 53B)",
+        1
+      ]
+    ],
+    "PERSON": [
+      [
+        "Nantz",
+        1
+      ],
+      [
+        "Theismann",
+        1
+      ]
+    ]
+  },
+  "by_clause": [
+    {
+      "clause": "Post-Termination Services",
+      "hallucinated": 52,
+      "answer_types": {
+        "CLAUSE": 52
+      }
+    },
+    {
+      "clause": "Third Party Beneficiary",
+      "hallucinated": 33,
+      "answer_types": {
+        "CLAUSE": 33
+      }
+    },
+    {
+      "clause": "Exclusivity",
+      "hallucinated": 19,
+      "answer_types": {
+        "CLAUSE": 19
+      }
+    },
+    {
+      "clause": "Price Restrictions",
+      "hallucinated": 19,
+      "answer_types": {
+        "CLAUSE": 19
+      }
+    },
+    {
+      "clause": "Non-Transferable License",
+      "hallucinated": 18,
+      "answer_types": {
+        "CLAUSE": 18
+      }
+    },
+    {
+      "clause": "Renewal Term",
+      "hallucinated": 15,
+      "answer_types": {
+        "CLAUSE": 15
+      }
+    },
+    {
+      "clause": "Termination For Convenience",
+      "hallucinated": 12,
+      "answer_types": {
+        "CLAUSE": 12
+      }
+    },
+    {
+      "clause": "Effective Date",
+      "hallucinated": 10,
+      "answer_types": {
+        "DATE": 5,
+        "CLAUSE": 5
+      }
+    },
+    {
+      "clause": "Ip Ownership Assignment",
+      "hallucinated": 8,
+      "answer_types": {
+        "CLAUSE": 8
+      }
+    },
+    {
+      "clause": "Competitive Restriction Exception",
+      "hallucinated": 8,
+      "answer_types": {
+        "CLAUSE": 8
+      }
+    },
+    {
+      "clause": "Non-Compete",
+      "hallucinated": 8,
+      "answer_types": {
+        "CLAUSE": 8
+      }
+    },
+    {
+      "clause": "Change Of Control",
+      "hallucinated": 8,
+      "answer_types": {
+        "CLAUSE": 8
+      }
+    },
+    {
+      "clause": "Volume Restriction",
+      "hallucinated": 7,
+      "answer_types": {
+        "CLAUSE": 7
+      }
+    },
+    {
+      "clause": "Notice Period To Terminate Renewal",
+      "hallucinated": 6,
+      "answer_types": {
+        "CLAUSE": 6
+      }
+    },
+    {
+      "clause": "License Grant",
+      "hallucinated": 6,
+      "answer_types": {
+        "CLAUSE": 6
+      }
+    }
+  ]
+}

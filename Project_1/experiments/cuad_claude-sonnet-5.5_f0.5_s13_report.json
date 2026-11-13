@@ -1,0 +1,541 @@
+{
+  "model": "claude-sonnet-5.5",
+  "contracts": 190,
+  "sampled": 190,
+  "overall": {
+    "threshold": 0.0,
+    "n_fields": 7790,
+    "accepted": 2333,
+    "correct": 1032,
+    "wrong": 1015,
+    "hallucinated": 286,
+    "missed": 463,
+    "true_null": 4994,
+    "precision": 0.44234890698671236,
+    "recall": 0.41115537848605577,
+    "coverage": 0.8155378486055777,
+    "accepted_rate": 0.2994865211810013,
+    "hallucination_rate": 0.05416666666666667
+  },
+  "f1": 0.42618211852157756,
+  "by_threshold": [
+    {
+      "threshold": 0.0,
+      "accepted": 2333,
+      "precision": 0.44234890698671236,
+      "recall": 0.41115537848605577,
+      "net_saving_pct": -16.401412066752247
+    },
+    {
+      "threshold": 0.5,
+      "accepted": 1909,
+      "precision": 0.5034049240440021,
+      "recall": 0.38286852589641435,
+      "net_saving_pct": -11.924390243902439
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 1558,
+      "precision": 0.5481386392811296,
+      "recall": 0.3402390438247012,
+      "net_saving_pct": -8.837227214377407
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 1069,
+      "precision": 0.6379794200187091,
+      "recall": 0.27171314741035857,
+      "net_saving_pct": -4.830680359435173
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 746,
+      "precision": 0.7225201072386059,
+      "recall": 0.2147410358565737,
+      "net_saving_pct": -2.5614890885750965
+    },
+    {
+      "threshold": 0.85,
+      "accepted": 398,
+      "precision": 0.8919597989949749,
+      "recall": 0.14143426294820718,
+      "net_saving_pct": -0.5008985879332477
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 159,
+      "precision": 0.9748427672955975,
+      "recall": 0.061752988047808766,
+      "net_saving_pct": -0.030937098844672658
+    },
+    {
+      "threshold": 0.95,
+      "accepted": 11,
+      "precision": 1.0,
+      "recall": 0.004382470119521913,
+      "net_saving_pct": 0.0014120667522464698
+    }
+  ],
+  "per_clause": [
+    {
+      "clause": "Document Name",
+      "gold_present": 190,
+      "answered": 188,
+      "correct": 171,
+      "wrong": 17,
+      "hallucinated": 0,
+      "missed": 2,
+      "precision": 0.9095744680851063,
+      "recall": 0.9
+    },
+    {
+      "clause": "Agreement Date",
+      "gold_present": 174,
+      "answered": 152,
+      "correct": 138,
+      "wrong": 11,
+      "hallucinated": 3,
+      "missed": 25,
+      "precision": 0.9078947368421053,
+      "recall": 0.7931034482758621
+    },
+    {
+      "clause": "Governing Law",
+      "gold_present": 157,
+      "answered": 160,
+      "correct": 132,
+      "wrong": 25,
+      "hallucinated": 3,
+      "missed": 0,
+      "precision": 0.825,
+      "recall": 0.8407643312101911
+    },
+    {
+      "clause": "Effective Date",
+      "gold_present": 147,
+      "answered": 141,
+      "correct": 89,
+      "wrong": 42,
+      "hallucinated": 10,
+      "missed": 16,
+      "precision": 0.6312056737588653,
+      "recall": 0.6054421768707483
+    },
+    {
+      "clause": "Termination For Convenience",
+      "gold_present": 65,
+      "answered": 67,
+      "correct": 42,
+      "wrong": 13,
+      "hallucinated": 12,
+      "missed": 10,
+      "precision": 0.6268656716417911,
+      "recall": 0.6461538461538462
+    },
+    {
+      "clause": "Anti-Assignment",
+      "gold_present": 137,
+      "answered": 139,
+      "correct": 81,
+      "wrong": 53,
+      "hallucinated": 5,
+      "missed": 3,
+      "precision": 0.5827338129496403,
+      "recall": 0.5912408759124088
+    },
+    {
+      "clause": "No-Solicit Of Employees",
+      "gold_present": 23,
+      "answered": 23,
+      "correct": 10,
+      "wrong": 12,
+      "hallucinated": 1,
+      "missed": 1,
+      "precision": 0.43478260869565216,
+      "recall": 0.43478260869565216
+    },
+    {
+      "clause": "Covenant Not To Sue",
+      "gold_present": 40,
+      "answered": 30,
+      "correct": 13,
+      "wrong": 14,
+      "hallucinated": 3,
+      "missed": 13,
+      "precision": 0.43333333333333335,
+      "recall": 0.325
+    },
+    {
+      "clause": "Renewal Term",
+      "gold_present": 62,
+      "answered": 74,
+      "correct": 32,
+      "wrong": 27,
+      "hallucinated": 15,
+      "missed": 3,
+      "precision": 0.43243243243243246,
+      "recall": 0.5161290322580645
+    },
+    {
+      "clause": "No-Solicit Of Customers",
+      "gold_present": 16,
+      "answered": 17,
+      "correct": 6,
+      "wrong": 8,
+      "hallucinated": 3,
+      "missed": 2,
+      "precision": 0.35294117647058826,
+      "recall": 0.375
+    },
+    {
+      "clause": "License Grant",
+      "gold_present": 107,
+      "answered": 108,
+      "correct": 38,
+      "wrong": 64,
+      "hallucinated": 6,
+      "missed": 5,
+      "precision": 0.35185185185185186,
+      "recall": 0.35514018691588783
+    },
+    {
+      "clause": "Insurance",
+      "gold_present": 57,
+      "answered": 49,
+      "correct": 17,
+      "wrong": 31,
+      "hallucinated": 1,
+      "missed": 9,
+      "precision": 0.3469387755102041,
+      "recall": 0.2982456140350877
+    },
+    {
+      "clause": "Non-Disparagement",
+      "gold_present": 13,
+      "answered": 12,
+      "correct": 4,
+      "wrong": 3,
+      "hallucinated": 5,
+      "missed": 6,
+      "precision": 0.3333333333333333,
+      "recall": 0.3076923076923077
+    },
+    {
+      "clause": "Expiration Date",
+      "gold_present": 151,
+      "answered": 101,
+      "correct": 33,
+      "wrong": 65,
+      "hallucinated": 3,
+      "missed": 53,
+      "precision": 0.32673267326732675,
+      "recall": 0.2185430463576159
+    },
+    {
+      "clause": "Non-Compete",
+      "gold_present": 49,
+      "answered": 43,
+      "correct": 14,
+      "wrong": 21,
+      "hallucinated": 8,
+      "missed": 14,
+      "precision": 0.32558139534883723,
+      "recall": 0.2857142857142857
+    },
+    {
+      "clause": "Audit Rights",
+      "gold_present": 80,
+      "answered": 74,
+      "correct": 23,
+      "wrong": 49,
+      "hallucinated": 2,
+      "missed": 8,
+      "precision": 0.3108108108108108,
+      "recall": 0.2875
+    },
+    {
+      "clause": "Joint Ip Ownership",
+      "gold_present": 15,
+      "answered": 13,
+      "correct": 4,
+      "wrong": 8,
+      "hallucinated": 1,
+      "missed": 3,
+      "precision": 0.3076923076923077,
+      "recall": 0.26666666666666666
+    },
+    {
+      "clause": "Uncapped Liability",
+      "gold_present": 34,
+      "answered": 13,
+      "correct": 4,
+      "wrong": 6,
+      "hallucinated": 3,
+      "missed": 24,
+      "precision": 0.3076923076923077,
+      "recall": 0.11764705882352941
+    },
+    {
+      "clause": "Non-Transferable License",
+      "gold_present": 54,
+      "answered": 62,
+      "correct": 18,
+      "wrong": 26,
+      "hallucinated": 18,
+      "missed": 10,
+      "precision": 0.2903225806451613,
+      "recall": 0.3333333333333333
+    },
+    {
+      "clause": "Change Of Control",
+      "gold_present": 46,
+      "answered": 45,
+      "correct": 13,
+      "wrong": 24,
+      "hallucinated": 8,
+      "missed": 9,
+      "precision": 0.28888888888888886,
+      "recall": 0.2826086956521739
+    },
+    {
+      "clause": "Liquidated Damages",
+      "gold_present": 21,
+      "answered": 14,
+      "correct": 4,
+      "wrong": 9,
+      "hallucinated": 1,
+      "missed": 8,
+      "precision": 0.2857142857142857,
+      "recall": 0.19047619047619047
+    },
+    {
+      "clause": "Ip Ownership Assignment",
+      "gold_present": 52,
+      "answered": 50,
+      "correct": 14,
+      "wrong": 28,
+      "hallucinated": 8,
+      "missed": 10,
+      "precision": 0.28,
+      "recall": 0.2692307692307692
+    },
+    {
+      "clause": "Irrevocable Or Perpetual License",
+      "gold_present": 28,
+      "answered": 27,
+      "correct": 7,
+      "wrong": 17,
+      "hallucinated": 3,
+      "missed": 4,
+      "precision": 0.25925925925925924,
+      "recall": 0.25
+    },
+    {
+      "clause": "Parties",
+      "gold_present": 190,
+      "answered": 182,
+      "correct": 41,
+      "wrong": 141,
+      "hallucinated": 0,
+      "missed": 8,
+      "precision": 0.22527472527472528,
+      "recall": 0.21578947368421053
+    },
+    {
+      "clause": "Competitive Restriction Exception",
+      "gold_present": 30,
+      "answered": 27,
+      "correct": 6,
+      "wrong": 13,
+      "hallucinated": 8,
+      "missed": 11,
+      "precision": 0.2222222222222222,
+      "recall": 0.2
+    },
+    {
+      "clause": "Minimum Commitment",
+      "gold_present": 65,
+      "answered": 27,
+      "correct": 6,
+      "wrong": 20,
+      "hallucinated": 1,
+      "missed": 39,
+      "precision": 0.2222222222222222,
+      "recall": 0.09230769230769231
+    },
+    {
+      "clause": "Affiliate License-Licensee",
+      "gold_present": 25,
+      "answered": 18,
+      "correct": 4,
+      "wrong": 11,
+      "hallucinated": 3,
+      "missed": 10,
+      "precision": 0.2222222222222222,
+      "recall": 0.16
+    },
+    {
+      "clause": "Exclusivity",
+      "gold_present": 66,
+      "answered": 79,
+      "correct": 17,
+      "wrong": 43,
+      "hallucinated": 19,
+      "missed": 6,
+      "precision": 0.21518987341772153,
+      "recall": 0.25757575757575757
+    },
+    {
+      "clause": "Revenue/Profit Sharing",
+      "gold_present": 75,
+      "answered": 59,
+      "correct": 10,
+      "wrong": 47,
+      "hallucinated": 2,
+      "missed": 18,
+      "precision": 0.1694915254237288,
+      "recall": 0.13333333333333333
+    },
+    {
+      "clause": "Third Party Beneficiary",
+      "gold_present": 13,
+      "answered": 43,
+      "correct": 7,
+      "wrong": 3,
+      "hallucinated": 33,
+      "missed": 3,
+      "precision": 0.16279069767441862,
+      "recall": 0.5384615384615384
+    },
+    {
+      "clause": "Cap On Liability",
+      "gold_present": 102,
+      "answered": 58,
+      "correct": 9,
+      "wrong": 47,
+      "hallucinated": 2,
+      "missed": 46,
+      "precision": 0.15517241379310345,
+      "recall": 0.08823529411764706
+    },
+    {
+      "clause": "Notice Period To Terminate Renewal",
+      "gold_present": 36,
+      "answered": 39,
+      "correct": 6,
+      "wrong": 27,
+      "hallucinated": 6,
+      "missed": 3,
+      "precision": 0.15384615384615385,
+      "recall": 0.16666666666666666
+    },
+    {
+      "clause": "Rofr/Rofo/Rofn",
+      "gold_present": 39,
+      "answered": 29,
+      "correct": 4,
+      "wrong": 24,
+      "hallucinated": 1,
+      "missed": 11,
+      "precision": 0.13793103448275862,
+      "recall": 0.10256410256410256
+    },
+    {
+      "clause": "Warranty Duration",
+      "gold_present": 20,
+      "answered": 16,
+      "correct": 2,
+      "wrong": 10,
+      "hallucinated": 4,
+      "missed": 8,
+      "precision": 0.125,
+      "recall": 0.1
+    },
+    {
+      "clause": "Most Favored Nation",
+      "gold_present": 14,
+      "answered": 9,
+      "correct": 1,
+      "wrong": 5,
+      "hallucinated": 3,
+      "missed": 8,
+      "precision": 0.1111111111111111,
+      "recall": 0.07142857142857142
+    },
+    {
+      "clause": "Post-Termination Services",
+      "gold_present": 70,
+      "answered": 110,
+      "correct": 12,
+      "wrong": 46,
+      "hallucinated": 52,
+      "missed": 12,
+      "precision": 0.10909090909090909,
+      "recall": 0.17142857142857143
+    },
+    {
+      "clause": "Price Restrictions",
+      "gold_present": 3,
+      "answered": 19,
+      "correct": 0,
+      "wrong": 0,
+      "hallucinated": 19,
+      "missed": 3,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "clause": "Volume Restriction",
+      "gold_present": 28,
+      "answered": 9,
+      "correct": 0,
+      "wrong": 2,
+      "hallucinated": 7,
+      "missed": 26,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "clause": "Affiliate License-Licensor",
+      "gold_present": 8,
+      "answered": 4,
+      "correct": 0,
+      "wrong": 0,
+      "hallucinated": 4,
+      "missed": 8,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "clause": "Source Code Escrow",
+      "gold_present": 3,
+      "answered": 2,
+      "correct": 0,
+      "wrong": 2,
+      "hallucinated": 0,
+      "missed": 1,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "clause": "Unlimited/All-You-Can-Eat-License",
+      "gold_present": 5,
+      "answered": 1,
+      "correct": 0,
+      "wrong": 1,
+      "hallucinated": 0,
+      "missed": 4,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  ],
+  "cost": {
+    "input_tokens": 3798897,
+    "output_tokens": 381134,
+    "total_usd": 12.5500474,
+    "source": "as reported by the gateway",
+    "per_contract_usd": 0.06605288105263159,
+    "per_1k_tokens_usd": 0.0030023814177454664,
+    "per_token_usd": 3.0023814177454666e-06
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "extractor": "claude-sonnet-5.5",
+  "judge": "claude-haiku-5.5",
+  "contracts": 4,
+  "answers_judged": 35,
+  "verdict": {
+    "says_right_is_right": 15,
+    "says_right_is_wrong": 14,
+    "says_wrong_is_right": 1,
+    "says_wrong_is_wrong": 5,
+    "no_verdict": 0,
+    "precision_when_says_right": 0.5172413793103449,
+    "wrong_caught": 0.2631578947368421,
+    "right_kept": 0.9375
+  },
+  "by_threshold": {
+    "extractor": [
+      {
+        "threshold": 0.0,
+        "accepted": 35,
+        "precision": 0.45714285714285713,
+        "recall": 0.43243243243243246,
+        "net_saving_pct": -11.371951219512194
+      },
+      {
+        "threshold": 0.5,
+        "accepted": 26,
+        "precision": 0.5,
+        "recall": 0.35135135135135137,
+        "net_saving_pct": -7.7682926829268295
+      },
+      {
+        "threshold": 0.6,
+        "accepted": 18,
+        "precision": 0.6111111111111112,
+        "recall": 0.2972972972972973,
+        "net_saving_pct": -4.158536585365853
+      },
+      {
+        "threshold": 0.7,
+        "accepted": 15,
+        "precision": 0.6666666666666666,
+        "recall": 0.2702702702702703,
+        "net_saving_pct": -2.957317073170732
+      },
+      {
+        "threshold": 0.8,
+        "accepted": 14,
+        "precision": 0.7142857142857143,
+        "recall": 0.2702702702702703,
+        "net_saving_pct": -2.3536585365853657
+      },
+      {
+        "threshold": 0.85,
+        "accepted": 10,
+        "precision": 0.9,
+        "recall": 0.24324324324324326,
+        "net_saving_pct": -0.5487804878048781
+      },
+      {
+        "threshold": 0.9,
+        "accepted": 5,
+        "precision": 0.8,
+        "recall": 0.10810810810810811,
+        "net_saving_pct": -0.5792682926829268
+      },
+      {
+        "threshold": 0.95,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      },
+      {
+        "threshold": 0.99,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      }
+    ],
+    "judge": [
+      {
+        "threshold": 0.0,
+        "accepted": 35,
+        "precision": 0.45714285714285713,
+        "recall": 0.43243243243243246,
+        "net_saving_pct": -11.371951219512194
+      },
+      {
+        "threshold": 0.5,
+        "accepted": 29,
+        "precision": 0.5172413793103449,
+        "recall": 0.40540540540540543,
+        "net_saving_pct": -8.359756097560975
+      },
+      {
+        "threshold": 0.6,
+        "accepted": 26,
+        "precision": 0.5769230769230769,
+        "recall": 0.40540540540540543,
+        "net_saving_pct": -6.548780487804878
+      },
+      {
+        "threshold": 0.7,
+        "accepted": 23,
+        "precision": 0.6086956521739131,
+        "recall": 0.3783783783783784,
+        "net_saving_pct": -5.347560975609756
+      },
+      {
+        "threshold": 0.8,
+        "accepted": 21,
+        "precision": 0.6190476190476191,
+        "recall": 0.35135135135135137,
+        "net_saving_pct": -4.75
+      },
+      {
+        "threshold": 0.85,
+        "accepted": 18,
+        "precision": 0.6111111111111112,
+        "recall": 0.2972972972972973,
+        "net_saving_pct": -4.158536585365853
+      },
+      {
+        "threshold": 0.9,
+        "accepted": 16,
+        "precision": 0.6875,
+        "recall": 0.2972972972972973,
+        "net_saving_pct": -2.951219512195122
+      },
+      {
+        "threshold": 0.95,
+        "accepted": 4,
+        "precision": 1.0,
+        "recall": 0.10810810810810811,
+        "net_saving_pct": 0.024390243902439025
+      },
+      {
+        "threshold": 0.99,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      }
+    ],
+    "both (lower of the two)": [
+      {
+        "threshold": 0.0,
+        "accepted": 35,
+        "precision": 0.45714285714285713,
+        "recall": 0.43243243243243246,
+        "net_saving_pct": -11.371951219512194
+      },
+      {
+        "threshold": 0.5,
+        "accepted": 24,
+        "precision": 0.5416666666666666,
+        "recall": 0.35135135135135137,
+        "net_saving_pct": -6.560975609756097
+      },
+      {
+        "threshold": 0.6,
+        "accepted": 16,
+        "precision": 0.6875,
+        "recall": 0.2972972972972973,
+        "net_saving_pct": -2.951219512195122
+      },
+      {
+        "threshold": 0.7,
+        "accepted": 14,
+        "precision": 0.7142857142857143,
+        "recall": 0.2702702702702703,
+        "net_saving_pct": -2.3536585365853657
+      },
+      {
+        "threshold": 0.8,
+        "accepted": 14,
+        "precision": 0.7142857142857143,
+        "recall": 0.2702702702702703,
+        "net_saving_pct": -2.3536585365853657
+      },
+      {
+        "threshold": 0.85,
+        "accepted": 9,
+        "precision": 0.8888888888888888,
+        "recall": 0.21621621621621623,
+        "net_saving_pct": -0.5548780487804879
+      },
+      {
+        "threshold": 0.9,
+        "accepted": 5,
+        "precision": 0.8,
+        "recall": 0.10810810810810811,
+        "net_saving_pct": -0.5792682926829268
+      },
+      {
+        "threshold": 0.95,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      },
+      {
+        "threshold": 0.99,
+        "accepted": 0,
+        "precision": null,
+        "recall": 0.0,
+        "net_saving_pct": 0.0
+      }
+    ]
+  },
+  "best_net_saving": {
+    "extractor": {
+      "threshold": null,
+      "net_saving_pct": 0.0,
+      "accepted": 0,
+      "precision": null
+    },
+    "judge": {
+      "threshold": 0.95,
+      "net_saving_pct": 0.024390243902439025,
+      "accepted": 4,
+      "precision": 1.0
+    },
+    "both (lower of the two)": {
+      "threshold": null,
+      "net_saving_pct": 0.0,
+      "accepted": 0,
+      "precision": null
+    }
+  },
+  "cost": {
+    "input_tokens": 32543,
+    "output_tokens": 6507,
+    "total_usd": 0.00715858,
+    "source": "as reported by the gateway",
+    "per_contract_usd": 0.001789645,
+    "per_answer_usd": 0.00020453085714285715,
+    "per_token_usd": 1.8331830985915493e-07
+  }
+}

@@ -23,6 +23,54 @@ The plots are in `slides/` (`01` to `03`), each drawn by the script next to it.
   contract role ("the Company", "Party A"), against 29% of the correct answers, and that share rises through the contract
   from 56% in the first quarter to 75% in the last.
 
+#### NER tags in the hallucinated answers
+Every answer was tagged with named entities by `claude-sonnet-5.5` (slide `03`, data in
+`experiments/cuad_claude-sonnet-5.5_f0.5_s13_ner.jsonl` and `..._ner_report.json`): the 286 hallucinated answers and the
+1,032 correct ones from the same run. Each answer gets one answer type (what the answer as a whole is) and a list of
+entity tags found inside it.
+
+**Answer type.** Hallucinations are almost never a single value.
+
+| Answer type | Hallucinated (286) | Correct (1,032) |
+| --- | --- | --- |
+| CLAUSE (a passage to be read) | 277 (96.9%) | 603 (58.4%) |
+| DATE | 9 (3.1%) | 217 (21.0%) |
+| DOC (document name) | 0 | 171 (16.6%) |
+| ORG | 0 | 40 (3.9%) |
+| PERSON | 0 | 1 (0.1%) |
+
+**Entity tags inside the answers.** Share of answers that contain at least one entity with the tag (an answer can carry
+several tags, so the columns do not add up to 100%).
+
+| NER tag | Hallucinated answers | Correct answers | Most frequent in hallucinations |
+| --- | --- | --- | --- |
+| ROLE (party by contract role) | 187 (65.4%) | 302 (29.3%) | "Company", "Party", "Party A", "Parties", "Party B", "Client" |
+| ORG | 85 (29.7%) | 230 (22.3%) | "ICC", "TrueLink", "Excite" |
+| DOC | 74 (25.9%) | 308 (29.8%) | "Agreement", "Exhibit A", "Documentation" |
+| PRODUCT | 70 (24.5%) | 125 (12.1%) | "Product", "Hosting Services", "Products" |
+| DURATION | 70 (24.5%) | 207 (20.1%) | "Term", "twelve (12) months", "Initial Term" |
+| DATE | 20 (7.0%) | 245 (23.7%) | no entity repeats |
+| GPE | 10 (3.5%) | 113 (10.9%) | "Kuwait", "Territory", "Netherlands" |
+| MONEY | 7 (2.4%) | 19 (1.8%) | no entity repeats |
+| QUANTITY | 7 (2.4%) | 10 (1.0%) | no entity repeats |
+| LAW | 3 (1.0%) | 134 (13.0%) | no entity repeats |
+| PERCENT | 3 (1.0%) | 13 (1.3%) | no entity repeats |
+| PERSON | 2 (0.7%) | 10 (1.0%) | no entity repeats |
+
+What this shows:
+
+- **Over-represented in hallucinations:** ROLE (65% against 29%) and PRODUCT (25% against 12%). These are the defined
+  terms of a contract ("the Company", "the Product", "the Term"), which occur in almost every operative clause, so they
+  mark generic contract language rather than a specific fact.
+- **Under-represented in hallucinations:** DATE (7% against 24%), LAW (1% against 13%) and GPE (4% against 11%). An
+  answer anchored on a concrete date, a governing law or a place is rarely a hallucination.
+- **Which clauses they come from:** Post-Termination Services (52), Third Party Beneficiary (33), Exclusivity (19),
+  Price Restrictions (19), Non-Transferable License (18) and Renewal Term (15) account for 156 of the 286. All of them
+  are clause-type questions; only Effective Date (10) produces hallucinated dates.
+
+This is why step 4 of the method separates a named value from a clause to be read: values can be checked against the
+contract by code, clauses cannot, and the clauses are where the hallucinations are.
+
 ### The ground truth has gaps
 Many answers counted as hallucinations are in the contract: gold marks the clause as absent, but the context holds the answer.
 Of the 286 hallucinated answers above:
@@ -50,7 +98,7 @@ Dividing the document into steps to granularly verify it similar to rubrik techn
 | 3 | In which quarter of the contract is it? | It matches where the quote actually sits. |
 | 4 | Is it a value (date, name, amount) or a clause to be read? | A named value occurs in the contract. |
 
-The final confidence combines the four step confidences with **equal weight** (their geometric mean). The weights are a
+The final confidence combines the four step confidences with **equal weight** . The weights are a
 design choice: depending on the application they can be varied for each step, for example for legal documents, where a quote that is not
 in the contract should count for more than the other steps.
 
@@ -134,7 +182,7 @@ cp .env.example .env                # then fill in the variables below
 . .venv/bin/activate
 
 python 4_extract_example.py --data data/unified/test_public.jsonl --out preds_test_public_agent.jsonl
-python 5_score.py --gold data/unified/test_public.jsonl --pred preds_test_public_agent.jsonl --threshold 0.70
+python 5_score.py --gold data/unified/test_public.jsonl --pred preds_test_public_agent.jsonl --threshold 0.80
 
 bash run_hidden.sh <input.jsonl> <output.jsonl>     # hidden test: same extractor, needs data/raw/
 ```
